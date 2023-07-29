@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilosN5.css">
+    <title>Adminstrador</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="encabezado">
+                <h1>Violeta Indumentaria</h1>
+                <a id="inicio" href="index.html"><h4>VOLVER AL MENÚ</h4></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h3 id="descripcion">
+            Aqui es donde el Empleado realiza las Ventas manualmente y donde tambien va a Cargar los Productos
+        </h3>
+        <section>
+            <form action="">
+                <h3>REGISTRO MANUAL DE VENTA</h3>
+                <h4>Datos personales</h4>
+                Apellido: 
+                <input type="text" name="apellido" placeholder="el apellido"><br><br>
+                Nombre: 
+                <input type="text" name="nombre" placeholder="el nombre"><br><br>
+                DNI:
+                <input type="number" name="DNI" placeholder="1234.."><br><br>
+                Telefono: 
+                <input type="number" name="telefono" placeholder="su telefono"><br><br>
+                E-mail: 
+                <input type="email" name="e-mail" placeholder="ingresar email"><br><br>
+                Localidad:
+                <select name="localidad">
+                    <option value="">seleccione</option><option value="">Apostoles</option>
+                    <option value="">Candelaria</option><option value="">Cainguás</option>
+                    <option value="">Concentracion</option><option value="">Capital</option>
+                    <option value="">El Dorado</option><option value="">General Manuel Belgrano</option>
+                    <option value="">Guaraní</option><option value="">Iguazú</option>
+                    <option value="">L.N.Alem</option><option value="">L.General San Martin</option>
+                    <option value="">Montecarlo</option><option value="">Oberá</option>
+                    <option value="">San Ignacio</option><option value="">San Pedro</option>
+                    <option value="">San Javier</option><option value="">Veinticinco de Mayo</option>
+                </select><br><br>
+                Direccion: 
+                <input type="text" name="direccion" placeholder="igresar direccion"><br><br>
+                <h4>informe de venta</h4>
+                Fecha: 
+                <input type="date" name="fecha_venta" placeholder="ingresar fecha"><br><br>
+                Venta: 
+                <input type="text" name="nombre_producto" placeholder="descripcion"><br><br>
+                Codigo:
+                <input type="number" name="codigo_producto" placeholder="numero producto"><br><br>
+                Cantidad:
+                <input type="number" name="cantidad" placeholder="- - - -"><br><br>
+                Precio Unitario:
+                <input type="number" name="precio_unitario" placeholder="$----"><br><br>
+                Talle: 
+                <input type="radio" name="talle" value="S">S
+                <input type="radio" name="talle" value="M">M
+                <input type="radio" name="talle" value="L">L
+                <input type="radio" name="talle" value="XL">XL
+                <input type="radio" name="talle" value="XL">XXL
+                <br><br>Tipo de Pago
+                <select name="tipo_pagos">
+                    <option value="">efectivo</option>
+                    <option value="">mercado pago</option>
+                    <option value="">tarjeta de credito</option>
+                </select>
+                <br><br><input type="submit" value="REGISTRAR VENTA">
+            </form>
+            <form action="cargar_prod.php">
+                <h3>CARGA DE ARTICULOS</h3>
+                Fecha
+                <br><input type="date" name="fecha_ingreso"><br><br>
+                Articulo
+                <br><input type="text" name="nombre_producto" placeholder="ingreso de..."><br><br>
+                Categoria
+                <br><select name="id_categoria">
+                    <option value="">Seleccione</option>
+                    <option value="1">Hombres</option>
+                    <option value="2">Mujeres</option>
+                    <option value="3">Niños</option>
+                </select><br><br>
+                Precio Unitario
+                <br><input type="number" name="precio_unitario" placeholder="$----"><br><br>
+                Cantidad
+                <br><input type="number" name="cantidad" placeholder="- - - -"><br><br>
+                Talle 
+                <input type="radio" name="talle" value="S">S
+                <input type="radio" name="talle" value="M">M
+                <input type="radio" name="talle" value="L">L
+                <input type="radio" name="talle" value="XL">XL
+                <input type="radio" name="talle" value="XL">XXL
+                <br><br><select name="id_imagen">
+                    <option value="1">pantalon de mujer</option>
+                    <option value="2">pantalon de hombre</option>
+                    <option value="3">remera de mujer</option>
+                    <option value="4">remera de hombre</option>
+                    <option value="5">short de mujer</option>
+                    <option value="6">short de hombre</option>
+                    <option value="7">abrigo de mujer</option>
+                    <option value="8">abrigo de hombre</option>
+                    <option value="9">remera de niño</option>
+                    <option value="10">remera de niña</option>
+                    <option value="11">pantalon de niño</option>
+                    <option value="12">pantalon de niña</option>
+                </select><br>
+                <br><br><input type="submit" value="REGISTRAR PRODUCTOS">
+            </form>
+        </section>
+        
+    </main>
+    <footer></footer>
+</body>
+</html>

@@ -1,0 +1,86 @@
+body{
+    margin: 0%;
+    background-image: url("https://static.brusheezy.com/system/resources/previews/000/021/196/non_2x/pink-butterfly-photoshop-wallpaper-photoshop-textures.jpg");
+    background-size: cover;/*para ocupar toda la pantalla*/
+
+}
+#encabezado{
+    padding-top: 18px;
+    padding-bottom: 18px;
+    background-color: slateblue;
+    display: flex;
+}
+#logo{
+    margin-top: 16px;
+    margin-left: 72%;
+    
+}
+h1{
+    color:darkmagenta;
+    margin: 0%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 16px;
+}
+.link{
+    margin-left: 40px;
+    width: 160px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-color: antiquewhite;
+}
+.link:hover{/**con el hover le modifica a los links**/
+    display: block;
+    margin-left: 30px;
+    width: 210px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    color: fuchsia;
+    background-color: antiquewhite;
+}
+main{
+    display: flex;
+    height: 500px;
+}
+aside{
+    text-align: center;
+    width: 100%;
+    background-color: cornflowerblue;
+}
+#menu{
+    width: 200px;/**tamaño del menu**/
+    text-decoration: none;
+    padding-left: 0%;
+    list-style: none;/*sirve para sacar los itemps de las listas*/
+}
+#sub-menu{
+    width: 200px;/**ancho del sub-menu**/
+    list-style: none;
+    padding-left: 0%;
+    display: none;/**sirve para ocultar las sub-listas**/
+}
+#menu li:hover #sub-menu{/**cuando pasas el cursor por #menu muestra el #sub-menu**/
+    display: block;
+}
+li>a{
+    text-decoration: none;
+}
+fieldset{
+    width: 70%;
+    color:purple;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 10%;
+}
+/*esto pertenece al pie de pagina*/
+footer{
+    padding-left: 30%;
+    padding-top: 2%;
+    background-color: slateblue;
+    display: flex;
+}
+.iconos{
+    margin-left: 3%;
+    margin-right: 2%;
+}
